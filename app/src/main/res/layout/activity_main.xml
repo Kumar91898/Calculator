@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+
+        android:textStyle="bold"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="35dp"
+        android:layout_above="@+id/nums"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by: Kailash Kumar"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:paddingLeft="70dp"/>
+
+    <LinearLayout
+        android:id="@+id/nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <Button
+                android:id="@+id/on"
+                android:text="ON"
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/num7"
+                android:text="7"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/num4"
+                android:text="4"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/num1"
+                android:text="1"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/del"
+                android:text="DEL"
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/off"
+                android:text="off"
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/num8"
+                android:text="8"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/num5"
+                android:text="5"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/num2"
+                android:text="2"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/num0"
+                android:text="0"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ac"
+                android:text="ac"
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/num9"
+                android:text="9"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/num6"
+                android:text="6"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/num3"
+                android:text="3"
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/point"
+                android:text="."
+                android:textColor="@color/black"
+                style="@style/Button2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/div"
+                android:text="/"
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/times"
+                android:text="X"
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/min"
+                android:text="-"
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/plus"
+                android:text="+"
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/equal"
+                android:text="="
+                android:textColor="@color/black"
+                style="@style/Button1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
